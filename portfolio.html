@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -13,22 +12,27 @@
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 <body>
-    <header class="flex">
-        <a href="#"><span class="logo"><span class="color__web">Web</span><span class="color__studio__up">Studio</span></span></a>
+    <header class="header" >
+        <div class="flex container">
+        <a href="#" class="logo"><span class="color__web">Web</span><span class="color__studio__up">Studio</span></a>
         <nav>
-            <ul class="flex">
-                <li><a href="index.html" class="nav__style">Студія</a></li>
-                <li><a href="portfolio.html" class="nav__style active">Портфоліо</a></li>
-                <li><a href="#" class="nav__style">Контакти</a></li>
+            <ul class="nav__style">
+                <li><a href="index.html" >Студія</a></li>
+                <li><a href="portfolio.html" class=" active">Портфоліо</a></li>
+                <li><a href="#">Контакти</a></li>
             </ul>
         </nav>
-        <ul class="flex contact__up__please"> 
-        <li><a href="mailto:info@devstudio.com" class="m__t__style__up mail">info@devstudio.com</a></li>
-        <li><a href="tel:+38 096 111 11 11" class="m__t__style__up">+38 096 111 11 11</a></li>
+        <ul class="flex contact__up__please">
+            <li><a href="mailto:info@devstudio.com" class="m__t__style__up mail">
+                <svg class="icon__m__t" width="16" height="12"><use href="./img/icons.svg#icon-envelopemail"></use></svg>info@devstudio.com</a></li>
+            <li><a href="tel:+38 096 111 11 11" class="m__t__style__up">
+                <svg class="icon__m__t" width="10" height="16"><use href="./img/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a> </li>
         </ul>
+    </div>
     </header>
     <main>
-    <section class="container">
+    <section class="section">
+        <div class="container">
             <!--скрито-->
             <h1 class="hiden">сторінка з портфоліо</h1>
             <ul class="buttons__portfolio">
@@ -105,17 +109,32 @@
                 </div> 
             </div>
         </div>
+    </div>
     </section>    
     </main>
-    <footer>
-        <div class="grey__blok__down">
-        <a href="#"><span class="logo"><span class="color__web">Web</span><span class="color__studio__down">Studio</span></span></a>
-        <address>
-            <p class="address__style">м. Київ, пр-т Лесі Українки, 26</p>
-            <a href="mailto:info@devstudio.com" class="m__t__style__down">info@devstudio.com</a>
-            <a href="tel:+38 096 111 11 11" class="m__t__style__down">+38 096 111 11 11</a> 
-        </address>
+    <footer class="grey__blok__down">
+        <div class="container flex">
+            <div>
+            <a href="#" class="logo"><span class="color__web">Web</span><span class="color__studio__down">Studio</span></a>
+            <address>
+                <p class="address__style">м. Київ, пр-т Лесі Українки, 26</p>
+                <a href="mailto:info@devstudio.com" class="m__t__style__down">info@devstudio.com</a>
+                <a href="tel:+38 096 111 11 11" class="m__t__style__down">+38 096 111 11 11</a>
+            </address></div>
+            <div class="ico__block__place">
+            <p class="join">приєднуйтесь</p>
+            <ul class="ico__messenger ico__messenger__down">
+                <li><a href="#"><svg width="20" height="20">
+                    <use href="./img/icons.svg#icon-instagram"></use></svg></a></li>
+                <li><a href="#"><svg width="20" height="20">
+                    <use href="./img/icons.svg#icon-twitter"></use></svg></a></li>
+                <li><a href="#"><svg width="20" height="20">
+                    <use href="./img/icons.svg#icon-facebook"></use></svg></a></li>
+                <li><a href="#"><svg width="20" height="20">
+                    <use href="./img/icons.svg#icon-linkedin"></use></svg></a></li>
+            </ul>
+            </div>
         </div>
-    </footer>
+        </footer>
 </body>
 </html>
