@@ -294,6 +294,9 @@ address{
 /*тег секшон с клосом секшион*/
 /***************/
 /*стилі іконок*/
+svg{
+    fill:currentColor;
+}
 /*іконки мило і тел*/
 .icon__m__t{
     margin-right: 10px;
@@ -321,13 +324,13 @@ address{
     display: flex;
     align-items: center;
     justify-content: center;
+    color:#afb1b8;
 }
 .ico__messenger a:hover, .ico__messenger a:focus {
     background-color: #2196F3;
+    color:#FFFFFF;
 }
-.ico__messenger svg:hover, .ico__messenger svg:focus {
-    fill:#FFFFFF;
-}
+
 /*іконки футер*/
 .ico__messenger__down a{
     background: rgba(255, 255, 255, 0.1);
@@ -359,8 +362,8 @@ address{
 .clients li:not(:last-child){
     margin-right: 30px;
 }
-svg{
-    fill:#afb1b8;
+.clients svg{
+    color:#afb1b8;
 }
 .clients svg:hover, .clients svg:focus  {
     fill:#2196F3;
