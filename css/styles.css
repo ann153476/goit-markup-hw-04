@@ -234,7 +234,7 @@ address{
     margin-bottom: 50px;
     margin-left: 297px;
 }
-.buttons__portfolio button:hover{
+.buttons__portfolio button:hover, .buttons__portfolio button:focus{
     background-color: #2196F3;
     color:#fff;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -260,7 +260,7 @@ address{
     cursor: pointer;
 }
 /*сітка з портфоліо*/
-.portfolio__net>div{
+.portfolio__net li{
     width: 370px;
     flex-basis:calc(100%-6*15px)/3;
     margin: 15px;
@@ -362,18 +362,18 @@ svg{
 .clients li:not(:last-child){
     margin-right: 30px;
 }
-.clients svg{
+.clients a{
     color:#afb1b8;
 }
-.clients svg:hover, .clients svg:focus  {
-    fill:#2196F3;
+.clients a:hover, .clients a:focus{
+    color:#2196F3;
 }
 .icon__m__t:hover, .icon__m__t:focus {
-    fill:#2196F3;
+    color:#2196F3;
 }
 .ico__messenger__down svg{
-    fill: #FFFFFF;
+    color: #FFFFFF;
 }
-.portfolio__net>div:hover{
+.portfolio__net li:hover,.portfolio__net li:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+} 
