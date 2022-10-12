@@ -91,6 +91,10 @@ p{
 .nav__style li:not(:last-child){
     margin-right: 50px;
 }
+.nav__style a:hover,
+.nav__style a:focus{
+    color: #2196F3;
+}
 .active:visited{
     color: #2196F3;
 }
@@ -291,15 +295,21 @@ address{
     border: 2px solid #EEEEEE;
     border-top: none;
 }
-/*тег секшон с клосом секшион*/
 /***************/
 /*стилі іконок*/
 svg{
     fill:currentColor;
 }
+svg{
+    
+}
 /*іконки мило і тел*/
 .icon__m__t{
     margin-right: 10px;
+}
+.icon__m__t:hover, .icon__m__t:focus,
+.m__t__style__down:hover, .m__t__style__down:focus {
+    color:#2196F3;
 }
 /*іконки переваги*/
 .benefits__ico li{
@@ -330,7 +340,6 @@ svg{
     background-color: #2196F3;
     color:#FFFFFF;
 }
-
 /*іконки футер*/
 .ico__messenger__down a{
     background: rgba(255, 255, 255, 0.1);
@@ -346,34 +355,30 @@ svg{
     margin-bottom: 20px;
     margin-top: 9px;
 }
+.ico__messenger__down svg{
+    color: #FFFFFF;
+}
 /*іконки кліентів*/
 .clients{
     justify-content: space-between;
     align-items: center;
 }
-.clients li{
+.clients a{
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     display: flex;
     width: 170px;height: 92px;
     align-items: center;
-    justify-content: center;
-}
-.clients li:not(:last-child){
-    margin-right: 30px;
-}
-.clients a{
+    justify-content: center;  
     color:#afb1b8;
 }
+.clients a:not(:last-child){
+    margin-right: 30px;
+}
 .clients a:hover, .clients a:focus{
-    color:#2196F3;
+    color:#2196F3;border: 1px solid #2196F3;
 }
-.icon__m__t:hover, .icon__m__t:focus {
-    color:#2196F3;
-}
-.ico__messenger__down svg{
-    color: #FFFFFF;
-}
+/*друга сторінка*/
 .portfolio__net li:hover,.portfolio__net li:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 } 
