@@ -136,12 +136,10 @@ p{
 .big__text{
     color: #FFFFFF;
     text-align: center;
-    
     line-height: 1.36;
     font-size: 44px; 
     text-transform: uppercase;
     width: 696px;
-    background-color: red;
     display: block;
     margin: auto;margin-bottom: 30px;
 }
