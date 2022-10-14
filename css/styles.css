@@ -49,7 +49,7 @@ a{
 ul{
     list-style: none;
 }
-h2{
+.title__text{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -113,6 +113,14 @@ p{
     padding: 30px 0; 
     align-items: flex-end;
 }
+.contact__up__please a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon__m__t{
+    margin-right: 10px;
+}
 /*великий сірий блок*/
 .grey__block{
     background-image: linear-gradient(#2F303A66,#2F303A66),url(../img/Img.png);
@@ -125,16 +133,17 @@ p{
     max-width: 1600px;
     margin:0 auto;
 }
-.grey__container{
-    max-width: 696px;
-}
 .big__text{
     color: #FFFFFF;
     text-align: center;
-    margin-bottom: 30px;
+    
     line-height: 1.36;
     font-size: 44px; 
     text-transform: uppercase;
+    width: 696px;
+    background-color: red;
+    display: block;
+    margin: auto;margin-bottom: 30px;
 }
 /*велика кнопка*/
 .get__service{
@@ -153,15 +162,27 @@ p{
     display: block;
 }
 /*наші переваги блок*/
+/*іконки переваги*/
+.benefits div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background-color:#F5F4FA;
+    margin-bottom: 30px;
+}
+.benefits__ico li:not(:last-child){
+    margin-right: 30px;
+}
 .benefits{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 94px;
 }
 .benefits li{
     width: 270px;
 }
-.benefits h3{
+.benefits__text{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -175,6 +196,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 94px;
 }
 /*наша команда*/
 .not__realy__white{
@@ -193,7 +215,7 @@ p{
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.team__style h3{
+.team__style__text{
     margin-bottom: 10px; 
     font-weight: 500;
 }
@@ -205,7 +227,7 @@ p{
     text-align:center;
     padding: 30px 32px
 }
-.team__name p{
+.team__name__p{
     margin-bottom: 16px;
 }
 
@@ -219,7 +241,7 @@ p{
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #FFFFFF;
-    margin-bottom: 9px;
+    font-style: normal;
 }
 address{
    margin-top: 20px;
@@ -229,6 +251,8 @@ address{
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     display: flex;
+}
+.address__position li:not(:last-child){
     margin-bottom: 9px;
 }
 /*друга сторінка*/
@@ -236,16 +260,10 @@ address{
 .buttons__portfolio{
     display: flex;
     margin-bottom: 50px;
-    margin-left: 297px;
+    justify-content: center;
 }
 .buttons__portfolio button:hover, .buttons__portfolio button:focus{
     background-color: #2196F3;
-    color:#fff;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-.action__button{
-    padding: 6px 25px !important;
-    background-color: #2196F3 !important;
     color:#fff;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -292,7 +310,7 @@ address{
 }
 .border__not__top{
     padding: 20px 24px;
-    border: 2px solid #EEEEEE;
+    border: 1px solid #EEEEEE;
     border-top: none;
 }
 /***************/
@@ -300,26 +318,12 @@ address{
 svg{
     fill:currentColor;
 }
-svg{
-    
-}
 /*іконки мило і тел*/
-.icon__m__t{
-    margin-right: 10px;
-}
 .icon__m__t:hover, .icon__m__t:focus,
 .m__t__style__down:hover, .m__t__style__down:focus {
     color:#2196F3;
 }
-/*іконки переваги*/
-.benefits__ico li{
-    padding: 25px 100px;
-    background-color:#F5F4FA;
-    margin-bottom: 30px;
-}
-.benefits__ico li:not(:last-child){
-    margin-right: 30px;
-}
+
 /*іконки месенджеров*/
 
 .ico__messenger{
