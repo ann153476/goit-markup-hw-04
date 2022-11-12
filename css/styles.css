@@ -245,11 +245,17 @@ p{
     display: block;
 }
 .address__style{
+    font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    font-style: normal;color: #FFFFFF;
+    font-style: normal;
+    color: #fff;
 }
 .m__t__style__down{
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
     color: rgba(255, 255, 255, 0.6);
     display: flex;
 }
@@ -352,12 +358,13 @@ svg{
     background: rgba(255, 255, 255, 0.1);
 }
 .ico__block__place{
-    margin-left: 70px;
+    margin-right: 70px;
 }
 .join{
     color: #FFFFFF;
     text-transform: uppercase;
     font-weight: 700;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     margin-bottom: 20px;
     margin-top: 9px;
