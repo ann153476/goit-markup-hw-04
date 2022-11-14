@@ -171,6 +171,7 @@ p{
     align-items: center;
     width: 270px;
     height: 120px;
+    border-radius: 4px;
     background-color:#F5F4FA;
     margin-bottom: 30px;
 }
@@ -393,6 +394,9 @@ svg{
     color:#2196F3;border: 1px solid #2196F3;
 }
 /*друга сторінка*/
-.portfolio__net li:hover,.portfolio__net li:focus{
+.portfolio__net a{
+    display: block;
+}
+.portfolio__net a:hover, .portfolio__net a:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 } 
